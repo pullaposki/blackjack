@@ -1,0 +1,87 @@
+﻿
+/* Style the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+/* Style the h1 */
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Style the buttons */
+button {
+    display: inline-block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #4CAF50;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Style the paragraphs */
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Style the div that holds the buttons */
+div {
+    text-align: center;
+}
+
+@keyframes lerp {
+    0%   { transform: scale(1); } /* Initial state */
+    50%  { transform: scale(1.5); } /* Lerp to 1.5 times the original size */
+    100% { transform: scale(1); } /* Back to original size */
+}
+
+.lerp {
+    animation-name: lerp;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(1); /* start at normal size */
+    }
+    100% {
+        transform: scale(1.2); /* end at 1.2 times the normal size */
+    }
+}
+
+.zoom-in {
+    animation: zoom-in 2s ease-in-out forwards; /* apply the animation over 2 seconds and make the element stay at the end state after the animation finishes */
+}
+
+.card-box {
+    border: 1px solid black; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+
+.red {
+    color: red;
+    transition: color 0.5s ease-in;
+}
+
+.green {
+    color: green;
+    transition: color 0.5s ease-in;
+}
