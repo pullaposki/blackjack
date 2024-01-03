@@ -85,3 +85,20 @@ div {
     color: green;
     transition: color 0.5s ease-in;
 }
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+/* Similar definitions for each browser prefix if needed */
+@-webkit-keyframes fadeIn { /*...*/}
+@-moz-keyframes fadeIn { /*...*/}
+@-o-keyframes fadeIn { /*...*/}
